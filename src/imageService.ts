@@ -5,12 +5,13 @@ import ImageCropPicker, {
 import permissionService from './permissionService';
 
 const imagePickerOptions: Options = {
-  compressImageQuality: 0.1,
-  compressImageMaxWidth: 2048,
   includeBase64: false,
   includeExif: true,
   mediaType: 'photo' as const,
   multiple: true,
+  compressImageQuality: 0.2,
+  compressImageMaxHeight: 2048,
+  compressImageMaxWidth: 2048,
 };
 
 /**
